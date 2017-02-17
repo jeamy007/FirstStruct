@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63ABCFE2-E59B-46C7-8CEE-77BF621FAEB4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppleView</RootNamespace>
+    <AssemblyName>AppleView</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonTools">
+      <HintPath>..\Lib\CommonTools.dll</HintPath>
+    </Reference>
+    <Reference Include="DbHandle">
+      <HintPath>..\Lib\DbHandle.dll</HintPath>
+    </Reference>
+    <Reference Include="IDbHandle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\IDbHandle.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Manage\Home.aspx" />
+    <Content Include="Manage\Login.aspx" />
+    <Content Include="Manage\LogOut.aspx" />
+    <Content Include="Manage\Scripts\form-init.js" />
+    <Content Include="Manage\Scripts\global-ajax.js" />
+    <Content Include="Manage\Scripts\menuload.js" />
+    <Content Include="Manage\Scripts\ui-ext.js" />
+    <Content Include="Manage\Scripts\user-dtlist.js" />
+    <Content Include="Manage\Scripts\user-public.js" />
+    <Content Include="Manage\Scripts\user-sortnum.js" />
+    <Content Include="Manage\Styles\user-public.css" />
+    <Content Include="Manage\Styles\user-table.css" />
+    <Content Include="Manage\SystemManage\AddUser.aspx" />
+    <Content Include="Manage\SystemManage\RepassManage.aspx" />
+    <Content Include="Manage\SystemManage\RoleManage.aspx" />
+    <Content Include="Manage\SystemManage\MenuManage.aspx" />
+    <Content Include="media\css\bootstrap-responsive.min.css" />
+    <Content Include="media\css\bootstrap.min.css" />
+    <Content Include="media\css\default.css" />
+    <Content Include="media\css\font-awesome.min.css" />
+    <Content Include="media\css\glyphicons.css" />
+    <Content Include="media\css\login.css" />
+    <Content Include="media\css\style-metro.css" />
+    <Content Include="media\css\style-responsive.css" />
+    <Content Include="media\css\style.css" />
+    <Content Include="media\css\uniform.default.css" />
+    <Content Include="media\image\fontawesome-webfont.eot" />
+    <Content Include="media\image\fontawesome-webfont.ttf" />
+    <Content Include="media\image\glyphicons-regular.eot" />
+    <Content Include="media\image\glyphicons-regular.ttf" />
+    <Content Include="media\image\glyphicons-regular.woff" />
+    <Content Include="media\image\glyphiconshalflings-regular.eot" />
+    <Content Include="media\image\glyphiconshalflings-regular.ttf" />
+    <Content Include="media\image\loading.gif" />
+    <Content Include="media\image\menu-toggler.png" />
+    <Content Include="media\image\portlet-collapse-icon-white.png" />
+    <Content Include="media\image\portlet-expand-icon-white.png" />
+    <Content Include="media\image\remove-icon-small.png" />
+    <Content Include="media\image\sidebar-menu-arrow.png" />
+    <Content Include="media\image\sidebar-toggler.jpg" />
+    <Content Include="media\image\sort.png" />
+    <Content Include="media\image\sprite.png" />
+    <Content Include="media\image\syncfusion-icons-white.png" />
+    <Content Include="media\js\app.js" />
+    <Content Include="media\js\bootstrap.min.js" />
+    <Content Include="media\js\jquery-1.10.1.min.js" />
+    <Content Include="media\js\jquery.blockui.min.js" />
+    <Content Include="media\js\jquery.fileupload.js" />
+    <Content Include="media\js\jquery.ui.widget.js" />
+    <Content Include="media\SeeIco.html" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\global-ajax.js" />
+    <Content Include="Scripts\global.js" />
+    <Content Include="Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\json2.min.js" />
+    <Content Include="Scripts\ui-ext.js" />
+    <Content Include="tools.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Master\MasterManage.Master.cs">
+      <DependentUpon>MasterManage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Master\MasterManagePaging.Master.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SystemManage\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SystemManage\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SystemManage\RepassManage.aspx.cs">
+      <DependentUpon>RepassManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SystemManage\RepassManage.aspx.designer.cs">
+      <DependentUpon>RepassManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\SystemManage\RoleManage.aspx.cs">
+      <DependentUpon>RoleManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\SystemManage\MenuManage.aspx.cs">
+      <DependentUpon>MenuManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\UI\ManageBaseFormPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\UI\ManageBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\UI\SessionPanel.cs" />
+    <Compile Include="Manage\UI\uploadfile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\UI\Search.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppleModel\AppleModel.csproj">
+      <Project>{e17c046b-f46f-45f4-aa8f-45eb5ee1d26c}</Project>
+      <Name>AppleModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppleHelp\AppleHelp.csproj">
+      <Project>{e74a1368-5b04-42c2-992e-2fbe3fc5ac3a}</Project>
+      <Name>AppleHelp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppleDbop\AppleDbop.csproj">
+      <Project>{1b440a3c-c0a7-4c79-be0c-225061a70f19}</Project>
+      <Name>AppleDbop</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Manage\Master\MasterManage.Master" />
+    <Content Include="Manage\Scripts\iframeAutoRect.js" />
+    <Content Include="media\image\fontawesome-webfont.woff" />
+    <None Include="Properties\PublishProfiles\HustAuditProject.pubxml" />
+    <None Include="Properties\PublishProfiles\审计系统.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Manage\BoManager\" />
+    <Folder Include="Manage\Report\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16188</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:16188/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

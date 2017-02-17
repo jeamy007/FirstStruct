@@ -1,0 +1,34 @@
+﻿.gtable,.reptable{width:100%;border-collapse:collapse; text-align:center;border-spacing:0;font:13px/1.8 Arial,sans-serif}
+table.alleft{text-align:left}
+table.alright{text-align:right}
+table.alright td,table.alright th{padding-right:8px}
+.gtable th,.gtable td{padding:3px 2px}
+.gtable input{vertical-align:middle}
+.gtable img{vertical-align:middle;margin-right:5px}
+.gtable thead tr{color:#333;border:1px solid #ccc}
+.gtable thead th{background:#efefef}
+/*.gtable thead th{background:-webkit-gradient(linear,0 0,0 bottom,from(#F5F5F5),to(#efefef));background:-moz-linear-gradient(#F5F5F5,#efefef);background:linear-gradient(#F5F5F5,#efefef);-pie-background:linear-gradient(#F5F5F5,#efefef);}*/
+
+.gtable>tbody>tr>td{border-bottom:1px solid #eee}
+.gtable>tbody>tr:nth-child(odd)>td,.detailtable tbody tr.odd>td{background-color:#fff}
+.gtable>tbody>tr:nth-child(even)>td,.detailtable tbody tr.even>td{background-color:#f7f7f7}
+.gtable>tbody>tr:hover>td{background-color:#FFFAE3}
+
+.gtable>tbody>tr td input[type="text"],.gtable tbody tr td input[type="number"]{margin:0px; text-align:center;}
+.gtable th .sort { background:url(/media/image/sort.png) right no-repeat;padding:0px 20px 0px 0px; color:#333;text-decoration:none}
+.gtable th .sort.desc {background-position-y:7px;}
+.gtable th .sort.asc {background-position-y:-7px;}
+
+.gtable input[type="number"] {height:25px;line-height:25px;padding:3px;border:1px solid #dedede;border-radius:5px; width:50px}
+.gtable input[type="checkbox"] {width:20px;height:20px; padding:3px;display:block;}
+
+
+.gtable .alcenter{text-align:center}
+.gtable .alleft{text-align:left}
+.gtable .alright{text-align:right}
+.gtable .pointer{cursor:pointer}
+.gtable .index{width:30px}
+.gtable .vmiddle{vertical-align:middle}
+
+div.dataTables_paginate {float:right;margin:0;}
+
